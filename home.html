@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>DondeGo | Dynamic Cookie</title>
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body bgcolor="white">
+	<header>
+		<nav id="nav">
+			<img id="donde" src="http://donde.herokuapp.com/images/HUESPED_logo_donde_RGB-07_cr.png">
+			<a id="ubicacion"></a>
+			<a id="mas"></a>
+			<a id="info"></a>
+
+		</nav>
+	</header>
+	<main>
+		<div id="map" style="width:1200px;height:850px;"></div>
+		<script>
+			function myMap() {
+			    var mapOptions = {
+			        center: new google.maps.LatLng(-32.621729, -55.956975),
+			        zoom: 7,
+			        mapTypeId: google.maps.MapTypeId.ROADMAP
+			    }
+				var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+			}
+		</script>
+
+		<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+
+		<img id= "logo" src="http://donde.herokuapp.com/images/HUESPED_logo_donde_RGB-06.png">	
+		<p id="descripcion" align="right">Conoce dónde hacerte <strong>la prueba de VIH</strong> y buscar <strong>condones</strong> gratis. También encuentra los <strong>vacunatorios</strong> y <strong>centros de infectología más cercanos.</strong></p>
+		<ul class="menu">
+			<img id="jugarimg" src="images/play.png">
+			<li><a id="jugar" href="login.html">Jugar</a></li>
+			<img id="medkit" src="images/medikit.png">
+			<li><a id="servicios" href="#">Servicios</a>
+				<ul>
+					<li><a id="condones" href="http://donde.herokuapp.com/#/como-buscas/condones/">Condones</a></li>
+					<li><a id= "prueba" href="http://donde.herokuapp.com/#/como-buscas/prueba/">Prueba_VIH</a></li>
+					<li><a id="vacunatorios" href="http://donde.herokuapp.com/#/como-buscas/vacunatorio/">Vacunatorios</a></li>
+					<li><a id="centros" href="http://donde.herokuapp.com/#/como-buscas/infectologia/">Centros_de_Infectologia</a></li>
+				</ul>
+			</li>
+		</ul>
+	</main>
+</body>
+</html>
