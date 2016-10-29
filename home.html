@@ -3,7 +3,6 @@
 <head>
 	<meta charset="utf-8">
 	<title>DondeGo | Dynamic Cookie</title>
-	<script scr="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="estilos.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
@@ -18,7 +17,7 @@
 		</nav>
 	</header>
 	<main>
-		<div id="map" style="width:1200px;height:850px;"></div>
+		<div id="map">
 		<script>
 			function myMap() {
 			    var mapOptions = {
@@ -31,7 +30,7 @@
 		</script>
 
 		<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
-
+		</div>
 		<img id= "logo" src="http://donde.herokuapp.com/images/HUESPED_logo_donde_RGB-06.png">	
 		<p id="descripcion" align="right">Conoce dónde hacerte <strong>la prueba de VIH</strong> y buscar <strong>condones</strong> gratis. También encuentra los <strong>vacunatorios</strong> y <strong>centros de infectología más cercanos.</strong></p>
 		<ul class="menu">
